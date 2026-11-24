@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "tinyworkshop.omanote",
+  "name": "Omanote",
+  "version": "0.3.3",
+  "author": "Michele Belleri",
+  "license": "MIT",
+  "description": "Omanote in the bar, like the app on a phone: folders, notes and the note itself, editable right in the panel. Requires the Omanote app, which syncs the notes with Joplin Server.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Omanote",
+    "description": "Folders, notes and note editing in a panel. Click for the panel, right-click to show or hide the app, middle-click for a new note.",
+    "category": "Productivity",
+    "aliases": [
+      "notes",
+      "note",
+      "joplin",
+      "scratchpad",
+      "memo"
+    ],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "showPreview": true
+    },
+    "schema": [
+      {
+        "key": "showPreview",
+        "type": "boolean",
+        "label": "Show the first lines of each note",
+        "defaultValue": true
+      }
+    ]
+  },
+  "homepage": "https://github.com/TinyWorkshopDesign/omanote"
+}
